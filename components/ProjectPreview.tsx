@@ -22,7 +22,7 @@ const ProjectPreview: React.FC<Props> = ({
 }) => {
   return (
     <motion.div
-      className={`h-[30rem] rounded-3xl border-2 border-zinc-400 overflow-hidden ${
+      className={`h-[30rem] rounded-3xl border-2 border-zinc-500 overflow-hidden ${
         dark ? "dark" : ""
       }`}
       style={{ background: `${bgColor}` }}
