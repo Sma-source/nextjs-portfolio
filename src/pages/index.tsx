@@ -67,6 +67,7 @@ export default function Home() {
     rgba(194, 97, 254, 0.15),
     rgba(255, 255, 255, 0)
   )"
+          linkUrl="https://github.com/Sma-source/3d-tshirt.git"
           dark
         />
         <ProjectPreview
