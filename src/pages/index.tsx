@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import ProjectPreview from "../../components/ProjectPreview";
-import Dribbble from "../../public/dribbble.svg";
+
 import Instagram from "../../public/instagram.svg";
-import Twitter from "../../public/twitter.svg";
+
 import Linkedin from "../../public/linkedin.svg";
 import SocialButton from "../../components/SocialButton";
 import Link from "next/link";
