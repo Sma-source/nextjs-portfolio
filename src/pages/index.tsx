@@ -97,7 +97,7 @@ export default function Home() {
           description="Project management app"
           bgColor="radial-gradient(
     ellipse at center,
-   rgba(93, 254, 62, 0.15),
+   rgba(75, 158, 255, 0.15),
     rgba(255, 255, 255, 0)
   )"
           dark
