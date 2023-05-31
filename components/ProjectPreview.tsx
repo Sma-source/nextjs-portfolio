@@ -1,12 +1,14 @@
 import React from "react";
 import Arrow from "../public/arrow.svg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface Props {
   name?: string | undefined;
   description?: string | undefined;
   imageUrl?: string | undefined;
   bgColor?: string | undefined;
+  linkUrl?: string | undefined;
   dark?: boolean | undefined;
 }
 
@@ -15,6 +17,7 @@ const ProjectPreview: React.FC<Props> = ({
   description = "This is an amazing block",
   imageUrl = "/project-1.png",
   bgColor = "#e4e4e7",
+  linkUrl = "/",
   dark = false,
 }) => {
   return (
@@ -28,7 +31,7 @@ const ProjectPreview: React.FC<Props> = ({
       variants={PreviewAnimation}
     >
       <div
-        className={`h-full w-full px-10 py-6  duration-[500ms] hover:scale-105 bg-cover bg-no-repeat bg-center transition-all ease-in-out`}
+        className={`h-full w-full px-10 py-6  duration-[700ms] hover:scale-105 bg-cover bg-no-repeat bg-center transition-all ease-in-out`}
         style={{ backgroundImage: `url('${imageUrl}')` }}
       >
         <div className="flex justify-between">
@@ -38,15 +41,17 @@ const ProjectPreview: React.FC<Props> = ({
               {description}
             </p>
           </div>
-          <div className="relative group">
-            <div className="h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer">
-              <div
-                className="absolute -inset-1 bg-gradient-to-r from-slate-50
+          <Link href={linkUrl} target="_blank" title="View Project">
+            <div className="relative group">
+              <div className="h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer">
+                <div
+                  className="absolute -inset-1 bg-gradient-to-r from-slate-50
                to-gray-50 rounded-full blur-sm opacity-20 group-hover:opacity-40 transition duration-200 group-hover:duration-200"
-              ></div>
-              <Arrow className="w-6 h-6" />
+                ></div>
+                <Arrow alt="Follow link" className="w-6 h-6" />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </motion.div>
