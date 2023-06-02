@@ -60,7 +60,7 @@ export default function Home() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
           name="Custom T-Shirt"
-          description="React Threejs 3d website"
+          description="React Threejs TailwindCSS 3d website"
           imageUrl="/customshirt.png"
           bgColor="radial-gradient(
     ellipse at center,
@@ -71,14 +71,15 @@ export default function Home() {
           dark
         />
         <ProjectPreview
-          name="Moneyscape"
-          description="Lend and borrow dashboard"
-          imageUrl="/project-2.png"
+          name="Hall Of Prompt"
+          description="Nextjs TailwindCSS Cloudinary"
+          imageUrl="/promptai.png"
           bgColor="radial-gradient(
     ellipse at center,
     rgba(194, 97, 254, 0.15),
     rgba(255, 255, 255, 0)
   )"
+          linkUrl="https://github.com/Sma-source/hallofprompt.git"
           dark
         />
         <ProjectPreview
