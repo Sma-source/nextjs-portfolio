@@ -11,9 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dribbble: "#EA4C89",
-        instagram: "#E4405F",
-        twitter: "#1DA1F2",
+        javascript: "#FFCA28",
+        react: "#00D8FF",
+        nodejs: "#539E43",
         linkedin: "#0A66C2",
         "neon-pink": "#F637EC",
       },
