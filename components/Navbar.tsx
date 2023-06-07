@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link href="#" className="text-white font-medium">
           Home
         </Link>
-        <Link href="#">Projects</Link>
+        <Link href="#projects">Projects</Link>
         <Link href="#">Contact</Link>
       </div>
     </nav>
