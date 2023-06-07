@@ -9,14 +9,14 @@ const SocialButton: React.FC<Props> = ({ children, bgColor = "black" }) => {
   let bgHoverColorClass;
 
   switch (bgColor) {
-    case "dribbble":
-      bgHoverColorClass = "hover:bg-dribbble";
+    case "javascript":
+      bgHoverColorClass = "hover:bg-javascript";
       break;
-    case "instagram":
-      bgHoverColorClass = "hover:bg-instagram";
+    case "react":
+      bgHoverColorClass = "hover:bg-react";
       break;
-    case "twitter":
-      bgHoverColorClass = "hover:bg-twitter";
+    case "nodejs":
+      bgHoverColorClass = "hover:bg-nodejs";
       break;
     case "linkedin":
       bgHoverColorClass = "hover:bg-linkedin";
