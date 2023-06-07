@@ -2,9 +2,10 @@ import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import ProjectPreview from "../../components/ProjectPreview";
 
-import Instagram from "../../public/instagram.svg";
-
-import Linkedin from "../../public/linkedin.svg";
+import Javascript from "../../public/javascript.svg";
+import Nextjs from "../../public/nextjs.svg";
+import Nodejs from "../../public/nodejs.svg";
+import React from "../../public/react.svg";
 import SocialButton from "../../components/SocialButton";
 import Link from "next/link";
 
@@ -42,22 +43,32 @@ export default function Home() {
                 Me Contacter
               </button>
             </div>
-            <div className="flex items-center gap-6 ml-0 md:ml-5 pb-2">
-              <SocialButton bgColor="instagram">
-                <Instagram className="w-5 h-5" />
+            <div className="flex items-center gap-8 ml-0 md:ml-5  pb-2">
+              <span className="text-white">|</span>
+              <span className="text-white">Stack</span>
+              <SocialButton bgColor="javascript">
+                <Javascript className="w-5 h-5" />
               </SocialButton>
-              <Link href={"https://www.linkedin.com"}>
-                <SocialButton bgColor="linkedin">
-                  <Linkedin className="w-5 h-5" />
-                </SocialButton>
-              </Link>
+
+              <SocialButton bgColor="react">
+                <React className="w-5 h-5" />
+              </SocialButton>
+              <SocialButton>
+                <Nextjs className="w-5 h-5" />
+              </SocialButton>
+              <SocialButton bgColor="nodejs">
+                <Nodejs className="w-5 h-5" />
+              </SocialButton>
             </div>
           </div>
         </div>
         <div className="h-[30rem] rounded-3xl border-2  border-zinc-500 bg-[url('/avatar.png')]  bg-cover bg-center"></div>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
+      <section
+        id="projects"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4"
+      >
         <ProjectPreview
           name="Custom T-Shirt"
           description="React Threejs TailwindCSS 3d website"
@@ -83,22 +94,24 @@ export default function Home() {
           dark
         />
         <ProjectPreview
+          name="Fashion Shop"
+          description="Reactjs TailwindCSS clothing online store"
+          imageUrl="/ecommerce.webp"
+          bgColor="radial-gradient(
+        ellipse at center,
+        rgba(75, 158, 255, 0.15),
+        rgba(255, 255, 255, 0)
+        )"
+          linkUrl="https://github.com/Sma-source/react-ecommerce.git"
+          dark
+        />
+        <ProjectPreview
           name="Admin Onboarding"
           description="Increase user engagement"
           imageUrl="/project-3.png"
           bgColor="radial-gradient(
     ellipse at center,
   rgba(75, 158, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  )"
-          dark
-        />
-        <ProjectPreview
-          name="Project Dashboard"
-          description="Project management app"
-          bgColor="radial-gradient(
-    ellipse at center,
-   rgba(75, 158, 255, 0.15),
     rgba(255, 255, 255, 0)
   )"
           dark
