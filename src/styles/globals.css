@@ -6,6 +6,14 @@ body {
   @apply max-w-[90%] w-[1080px] mx-auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  scroll-behavior: smooth;
+}
+
 .effect {
   background: radial-gradient(
     ellipse at center,

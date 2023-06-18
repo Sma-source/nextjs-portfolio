@@ -1,15 +1,34 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import ProjectPreview from "../../components/ProjectPreview";
-
+import { motion } from "framer-motion";
 import Javascript from "../../public/javascript.svg";
 import Nextjs from "../../public/nextjs.svg";
 import Nodejs from "../../public/nodejs.svg";
 import React from "../../public/react.svg";
+import Linkedin from "../../public/linkedin.svg";
+import Github from "../../public/github.svg";
+import Mail from "../../public/mail.svg";
 import SocialButton from "../../components/SocialButton";
 import Link from "next/link";
 
 export default function Home() {
+  const PreviewAnimation = {
+    initial: {
+      y: 30,
+      opacity: 0,
+      scale: 0.9,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: [0.6, 0.01, 0.05, 0.95],
+        duration: 1,
+      },
+    },
+  };
   return (
     <>
       <Head>
@@ -21,35 +40,34 @@ export default function Home() {
 
       <Navbar />
 
-      <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-8 mt-4 ">
-        <div className="h-[30rem] rounded-3xl border-2 md:p-10 p-4 flex flex-col md:gap-16 gap-9">
-          <h1 className="text-4xl font-bold text-white">
+      <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-8 mt-4">
+        <div className="h-[30rem] rounded-3xl border-2 md:p-10  p-4 flex flex-col md:gap-16 gap-6">
+          <h1 className=" flex md:text-4xl text-2xl font-bold text-white text-center lg:text-left">
             Je suis un développeur Javascript /React
           </h1>
-          <p className="flex-1 text-white font-semibold">
+          <p className="flex-1 text-white text-md  font-semibold text-center lg:text-left">
             Développeur web passionné par la création d'expériences digitales
             fluides, maîtrisant JavaScript et React. Engagé pour un code propre,
             des interfaces intuitives et des performances optimisées. Fortes
             compétences en résolution de problèmes et collaboration. Prêt à
             apporter mon expertise à une équipe dynamique.
           </p>
-          <div className="flex flex-col lg:flex-row pb-8 items-center gap-4 justify-self-end">
+          <div className="flex flex-col lg:flex-row pb-8  items-center gap-4 justify-self-end">
             <div className="relative group">
               <div
                 className="absolute -inset-0.5 bg-gradient-to-r from-slate-50
-               to-gray-50 rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-1000 group-hover:duration-200"
+               to-gray-50 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
               ></div>
-              <button className="relative bg-white text-black font-semibold py-3 px-12 rounded-full w-60 lg:w-auto">
-                Me Contacter
+              <button className="relative cursor-pointer bg-white text-black font-semibold py-3 px-12 rounded-full w-60 lg:w-auto">
+                <a href="#contact">Me Contacter</a>
               </button>
             </div>
             <div className="flex items-center gap-8 ml-0 md:ml-5  pb-2">
               <span className="text-white">|</span>
-              <span className="text-white">Stack</span>
+              <span className="text-white">Stacks</span>
               <SocialButton bgColor="javascript">
                 <Javascript className="w-5 h-5" />
               </SocialButton>
-
               <SocialButton bgColor="react">
                 <React className="w-5 h-5" />
               </SocialButton>
@@ -62,7 +80,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-[30rem] rounded-3xl border-2  border-zinc-500 bg-[url('/avatar.png')]  bg-cover bg-center"></div>
+        <div className=" h-[18rem] md:h-[30rem] rounded-3xl order-first lg:order-last border-2 border-zinc-500 bg-[url('/avatar.png')]  bg-cover bg-center"></div>
       </section>
 
       <section
@@ -128,6 +146,51 @@ export default function Home() {
           description="Analyze crypto currency"
           imageUrl="/project-3.png"
         />
+      </section>
+
+      <section
+        id="contact"
+        className="grid grid-cols-1 md:grid-cols-1 gap-4 mb-8 mt-4"
+      >
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={PreviewAnimation}
+          className="h-[30rem] rounded-3xl border-2 md:p-10 p-4 flex flex-col justify-center items-center md:gap-16 gap-9"
+        >
+          <h4 className="text-md text-white">Me Contacter</h4>
+          <h1 className="text-4xl text-white text-center">
+            Don't be shy! Hit me up! 👇
+          </h1>
+
+          <div className="flex flex-col items-center">
+            <div className="relative group">
+              <div
+                className="absolute -inset-0.5 bg-gradient-to-r from-slate-50
+               to-gray-50 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"
+              ></div>
+              <a
+                href="mailto:smain.rabhi@gmail.com"
+                className={`relative group h-14 w-14 bg-white text-black  rounded-full  flex justify-center items-center`}
+              >
+                <div className="fill-black">
+                  <Mail className="w-6 h-6" />
+                </div>
+              </a>
+            </div>
+            <span className="text-white pt-2 text-lg">Send me a mail</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <div className="flex space-x-6">
+              <SocialButton bgColor="linkedin">
+                <Linkedin className="w-5 h-5" />
+              </SocialButton>
+              <SocialButton>
+                <Github className="w-5 h-5" />
+              </SocialButton>
+            </div>
+          </div>
+        </motion.div>
       </section>
     </>
   );

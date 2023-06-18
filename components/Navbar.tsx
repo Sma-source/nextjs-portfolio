@@ -11,11 +11,11 @@ const Navbar = () => {
         </span>
       </div>
       <div className="flex gap-12 text-md text-zinc-400">
-        <Link href="#" className="text-white font-medium">
+        <a href="#" className="text-white font-medium">
           Home
-        </Link>
-        <Link href="#projects">Projects</Link>
-        <Link href="#">Contact</Link>
+        </a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   );
