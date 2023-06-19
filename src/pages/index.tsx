@@ -124,14 +124,15 @@ export default function Home() {
           dark
         />
         <ProjectPreview
-          name="Admin Onboarding"
-          description="Increase user engagement"
-          imageUrl="/project-3.png"
+          name="Adina Hotel & Spa"
+          description="Book Hotel Room in Adina beautiful suites"
+          imageUrl="/adinahotel.webp"
           bgColor="radial-gradient(
     ellipse at center,
   rgba(75, 158, 255, 0.15),
     rgba(255, 255, 255, 0)
   )"
+          linkUrl="https://github.com/Sma-source/bookhotel.git"
           dark
         />
         <ProjectPreview
