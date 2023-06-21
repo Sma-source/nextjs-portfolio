@@ -41,19 +41,19 @@ export default function Home() {
       <Navbar />
 
       <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-8 mt-4">
-        <div className="h-[30rem] rounded-3xl border-2 md:p-10  p-4 flex flex-col md:gap-16 gap-6">
+        <div className="h-[30rem] md:h-[30rem] rounded-3xl border-2 md:p-10  p-4 flex flex-col md:gap-16 gap-6">
           <h1 className=" flex md:text-4xl text-2xl font-bold text-white text-center lg:text-left">
             Je suis un développeur Javascript /React
           </h1>
-          <p className="flex-1 text-white text-md  font-semibold text-center lg:text-left">
+          <p className="flex-1 text-white text-sm  md:text-base font-semibold text-center lg:text-left">
             Développeur web passionné par la création d'expériences digitales
             fluides, maîtrisant JavaScript et React. Engagé pour un code propre,
             des interfaces intuitives et des performances optimisées. Fortes
             compétences en résolution de problèmes et collaboration. Prêt à
             apporter mon expertise à une équipe dynamique.
           </p>
-          <div className="flex flex-col lg:flex-row pb-8  items-center gap-4 justify-self-end">
-            <div className="relative group">
+          <div className="flex flex-col lg:flex-row pb-12 md:pb-8  items-center gap-4 justify-self-end">
+            <div className="relative group mb-[2rem] md:mb-0">
               <div
                 className="absolute -inset-0.5 bg-gradient-to-r from-slate-50
                to-gray-50 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
@@ -62,7 +62,7 @@ export default function Home() {
                 <a href="#contact">Me Contacter</a>
               </button>
             </div>
-            <div className="flex items-center gap-8 ml-0 md:ml-5  pb-2">
+            <div className="flex items-center gap-6 md:gap-8 ml-0 md:ml-5  md:pb-2 md:mb-0">
               <span className="text-white">|</span>
               <span className="text-white">Stacks</span>
               <SocialButton bgColor="javascript">
@@ -159,7 +159,7 @@ export default function Home() {
           variants={PreviewAnimation}
           className="h-[30rem] rounded-3xl border-2 md:p-10 p-4 flex flex-col justify-center items-center md:gap-16 gap-9"
         >
-          <h4 className="text-md text-white">Me Contacter</h4>
+          <h4 className="text-md text-white">Contact</h4>
           <h1 className="text-4xl text-white text-center">
             Don't be shy! Hit me up! 👇
           </h1>
@@ -193,6 +193,21 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+
+      <footer className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-4">
+        <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+          <div className="flex justify-center space-x-12 md:order-1">
+            <span className="text-sm font-bold text-white tracking-widest uppercase">
+              smadev
+            </span>
+          </div>
+          <div className="mt-8 md:mt-0 md:order-1">
+            <p className="text-center text-base text-gray-400">
+              &copy; 2023 All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
