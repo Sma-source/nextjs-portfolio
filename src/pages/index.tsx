@@ -136,10 +136,10 @@ export default function Home() {
           dark
         />
         <ProjectPreview
-          name="Newsy App"
-          description="News aggregator app"
-          imageUrl="/project-2.png"
-          bgColor="#171717"
+          name="Zugzwang"
+          description="Political news blog"
+          imageUrl="/blog.png"
+          bgColor="#0D1117"
           dark
         />
         <ProjectPreview
