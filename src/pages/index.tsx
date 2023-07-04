@@ -139,13 +139,23 @@ export default function Home() {
           name="Zugzwang"
           description="Political news blog"
           imageUrl="/blog.png"
-          bgColor="#0D1117"
+          bgColor="radial-gradient(
+    ellipse at center,
+  rgba(126, 231, 135, 0.15),
+    rgba(255, 255, 255, 0)
+  )"
           dark
         />
         <ProjectPreview
-          name="Krypto"
-          description="Analyze crypto currency"
-          imageUrl="/project-3.png"
+          name="Car Rental"
+          description="Find and Rent a car, quickly"
+          imageUrl="/carrental.png"
+          bgColor="radial-gradient(
+    ellipse at center,
+  rgba(126, 231, 135, 0.15),
+    rgba(255, 255, 255, 0)
+  )"
+          dark
         />
       </section>
 
