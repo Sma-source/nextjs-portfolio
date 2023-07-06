@@ -155,6 +155,7 @@ export default function Home() {
   rgba(126, 231, 135, 0.15),
     rgba(255, 255, 255, 0)
   )"
+          linkUrl="https://github.com/Sma-source/car-rental.git"
           dark
         />
       </section>
