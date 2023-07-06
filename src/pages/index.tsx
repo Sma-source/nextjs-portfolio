@@ -190,10 +190,10 @@ export default function Home() {
           variants={PreviewAnimation}
           className="h-[30rem] rounded-3xl border-2 md:p-10 p-4 flex flex-col justify-center items-center md:gap-16 gap-9"
         >
-          <h4 className="text-md text-white">Contact</h4>
-          <h1 className="text-4xl text-white text-center">
+          <h3 className="text-lg text-white">Contact</h3>
+          <p className="text-4xl text-white text-center">
             Don't be shy! Hit me up!
-          </h1>
+          </p>
 
           <div className="flex flex-col items-center">
             <div className="relative group">
@@ -203,6 +203,7 @@ export default function Home() {
               ></div>
               <a
                 href="mailto:smain.rabhi@gmail.com"
+                title="Send me a mail"
                 className={`relative group h-14 w-14 bg-white text-black  rounded-full  flex justify-center items-center`}
               >
                 <div className="fill-black">
@@ -217,12 +218,17 @@ export default function Home() {
               <Link
                 href="https://www.linkedin.com/in/sma%C3%AFn-rabhi/"
                 target="_blank"
+                title="Linkedin profile"
               >
                 <SocialButton bgColor="linkedin">
                   <Linkedin className="w-5 h-5" />
                 </SocialButton>
               </Link>
-              <Link href="https://github.com/Sma-source" target="_blank">
+              <Link
+                href="https://github.com/Sma-source"
+                target="_blank"
+                title="Github profile"
+              >
                 <SocialButton>
                   <Github className="w-5 h-5" />
                 </SocialButton>

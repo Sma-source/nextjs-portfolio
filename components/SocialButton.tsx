@@ -27,13 +27,13 @@ const SocialButton: React.FC<Props> = ({ children, bgColor = "black" }) => {
   }
 
   return (
-    <button
+    <span
       className={`group h-9 w-9 bg-white ${bgHoverColorClass} rounded-full transition-colors duration-200 ease-in-out flex justify-center items-center`}
     >
       <div className="fill-black group-hover:fill-white transition-colors duration-200 ease-in-out">
         {children}
       </div>
-    </button>
+    </span>
   );
 };
 
