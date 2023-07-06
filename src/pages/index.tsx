@@ -11,6 +11,7 @@ import Github from "../../public/github.svg";
 import Mail from "../../public/mail.svg";
 import SocialButton from "../../components/SocialButton";
 import Link from "next/link";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 export default function Home() {
   const PreviewAnimation = {
@@ -80,7 +81,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className=" h-[18rem] md:h-[30rem] rounded-3xl order-first lg:order-last border-2 border-zinc-500 bg-[url('/avatar.png')]  bg-cover bg-center"></div>
+        <div className=" h-[18rem] md:h-[30rem] rounded-3xl order-first lg:order-last border-2 border-zinc-500 bg-[url('/avatar.png')]  bg-cover bg-center transition-colors duration-1000 hover:bg-[#181624] hover:duration-800"></div>
       </section>
 
       <section
@@ -159,7 +160,7 @@ export default function Home() {
           dark
         />
       </section>
-
+      <ScrollToTopButton />
       <section
         id="contact"
         className="grid grid-cols-1 md:grid-cols-1 gap-4 mb-8 mt-4"
@@ -194,12 +195,19 @@ export default function Home() {
           </div>
           <div className="flex justify-between items-center">
             <div className="flex space-x-6">
-              <SocialButton bgColor="linkedin">
-                <Linkedin className="w-5 h-5" />
-              </SocialButton>
-              <SocialButton>
-                <Github className="w-5 h-5" />
-              </SocialButton>
+              <Link
+                href="https://www.linkedin.com/in/sma%C3%AFn-rabhi/"
+                target="_blank"
+              >
+                <SocialButton bgColor="linkedin">
+                  <Linkedin className="w-5 h-5" />
+                </SocialButton>
+              </Link>
+              <Link href="https://github.com/Sma-source">
+                <SocialButton>
+                  <Github className="w-5 h-5" />
+                </SocialButton>
+              </Link>
             </div>
           </div>
         </motion.div>
