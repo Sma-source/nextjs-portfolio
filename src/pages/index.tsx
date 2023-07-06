@@ -133,7 +133,7 @@ export default function Home() {
   rgba(75, 158, 255, 0.15),
     rgba(255, 255, 255, 0)
   )"
-          linkUrl="https://github.com/Sma-source/bookhotel.git"
+          linkUrl="https://bookhotel-plum.vercel.app/"
           dark
         />
         <ProjectPreview
