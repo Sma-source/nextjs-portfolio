@@ -192,7 +192,7 @@ export default function Home() {
         >
           <h4 className="text-md text-white">Contact</h4>
           <h1 className="text-4xl text-white text-center">
-            Don't be shy! Hit me up! 👇
+            Don't be shy! Hit me up!
           </h1>
 
           <div className="flex flex-col items-center">
