@@ -100,7 +100,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className=" h-[18rem] md:h-[30rem] rounded-3xl order-first lg:order-last border-2 border-zinc-500 bg-[url('/avatar.png')]  bg-cover bg-center transition-colors duration-1000 hover:bg-[#181624] hover:duration-800"></div>
+        <div className=" h-[18rem] md:h-[30rem] rounded-3xl order-first lg:order-last border-2 border-zinc-500 bg-[url('/avatar.webp')]  bg-cover bg-center transition-colors duration-1000 hover:bg-[#181624] hover:duration-800"></div>
       </section>
 
       <section
@@ -110,7 +110,7 @@ export default function Home() {
         <ProjectPreview
           name="Custom T-Shirt"
           description="React Threejs TailwindCSS 3d website"
-          imageUrl="/customshirt.png"
+          imageUrl="/customshirt.webp"
           bgColor="radial-gradient(
     ellipse at center,
     rgba(194, 97, 254, 0.15),
@@ -122,7 +122,7 @@ export default function Home() {
         <ProjectPreview
           name="Hall Of Prompt"
           description="Nextjs TailwindCSS Cloudinary"
-          imageUrl="/promptai.png"
+          imageUrl="/promptai.webp"
           bgColor="radial-gradient(
     ellipse at center,
     rgba(194, 97, 254, 0.15),
@@ -158,7 +158,7 @@ export default function Home() {
         <ProjectPreview
           name="Zugzwang"
           description="Political news blog"
-          imageUrl="/blog.png"
+          imageUrl="/blog.webp"
           bgColor="radial-gradient(
     ellipse at center,
   rgba(126, 231, 135, 0.15),
@@ -169,7 +169,7 @@ export default function Home() {
         <ProjectPreview
           name="Car Rental"
           description="Find and Rent a car, quickly"
-          imageUrl="/carrental.png"
+          imageUrl="/carrental.webp"
           bgColor="radial-gradient(
     ellipse at center,
   rgba(126, 231, 135, 0.15),
