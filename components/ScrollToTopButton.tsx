@@ -38,6 +38,7 @@ const ScrollToTopButton = () => {
       initial="hide"
       animate={controls}
       onClick={scrollToTop}
+      title="back to top"
     >
       <ArrowUp alt="back to top" className="w-8 h-8" />
     </motion.button>
