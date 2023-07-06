@@ -203,7 +203,7 @@ export default function Home() {
                   <Linkedin className="w-5 h-5" />
                 </SocialButton>
               </Link>
-              <Link href="https://github.com/Sma-source">
+              <Link href="https://github.com/Sma-source" target="_blank">
                 <SocialButton>
                   <Github className="w-5 h-5" />
                 </SocialButton>
