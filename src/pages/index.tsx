@@ -140,7 +140,7 @@ export default function Home() {
         rgba(75, 158, 255, 0.15),
         rgba(255, 255, 255, 0)
         )"
-          linkUrl="https://github.com/Sma-source/react-ecommerce.git"
+          linkUrl="https://react-ecommerce-eight-livid.vercel.app/"
           dark
         />
         <ProjectPreview
