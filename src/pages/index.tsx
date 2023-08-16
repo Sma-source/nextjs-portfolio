@@ -1,36 +1,12 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
-import ProjectPreview from "../../components/ProjectPreview";
-import { motion } from "framer-motion";
-import Javascript from "../../public/javascript.svg";
-import Nextjs from "../../public/nextjs.svg";
-import Nodejs from "../../public/nodejs.svg";
+
 import React from "../../public/react.svg";
-import Linkedin from "../../public/linkedin.svg";
-import Github from "../../public/github.svg";
-import Mail from "../../public/mail.svg";
-import SocialButton from "../../components/SocialButton";
+
 import Link from "next/link";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
-import Image from "next/image";
 
 export default function Home() {
-  const PreviewAnimation = {
-    initial: {
-      y: 30,
-      opacity: 0,
-      scale: 0.9,
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      scale: 1,
-      transition: {
-        ease: [0.6, 0.01, 0.05, 0.95],
-        duration: 1,
-      },
-    },
-  };
   return (
     <>
       <Head>
