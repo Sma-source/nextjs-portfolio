@@ -41,7 +41,10 @@ const Navbar = () => {
             Contact
           </a>
         </div>
-        <a href="/" className="duration-200 text-zinc-300 hover:text-zinc-100">
+        <Link
+          href="/"
+          className="duration-200 text-zinc-300 hover:text-zinc-100"
+        >
           {/* <div className="w-5 h-5 bg-zinc-500 sepia rounded-full" />
           <span className="text-sm font-bold text-white tracking-widest uppercase">
             smadev{" "}
@@ -53,7 +56,7 @@ const Navbar = () => {
             height={30}
             className="sepia"
           />
-        </a>
+        </Link>
       </div>
     </nav>
   );
