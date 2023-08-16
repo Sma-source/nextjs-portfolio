@@ -33,7 +33,7 @@ const ScrollToTopButton = () => {
   });
   return (
     <motion.button
-      className="fixed bottom-0 right-0 p-10 text-white"
+      className="fixed bottom-0 right-0 p-10"
       variants={ScrollToTopContainerVariants}
       initial="hide"
       animate={controls}
