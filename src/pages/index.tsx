@@ -330,7 +330,7 @@ export default function Home() {
                     <article className="p-4 md:p-8">
                       <div className="flex justify-between gap-2 items-center">
                         <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                          #nextjs
+                          #wordpress
                         </span>
                         <span className="text-zinc-500 text-xs  flex items-center gap-1">
                           <svg
@@ -355,11 +355,8 @@ export default function Home() {
                         Technisourcing
                       </h4>
                       <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                        Une refonte complète du site web de Technisourcing.
-                        TechniSourcing assure à ses clients une sous-traitance
-                        Europe de l'Est de très haut niveau technologique en
-                        chaudronnerie, équipements inox, mécano-soudure lourde
-                        de précision.
+                        A complete overhaul of the Technisourcing website, an
+                        industrial sourcing company. Developed with wordpress.
                       </p>
                     </article>
                   </Link>
@@ -387,14 +384,14 @@ export default function Home() {
                     ></div>
                   </div>
                   <Link
-                    href="https://github.com/Sma-source/3d-tshirt"
+                    href="https://www.originweb.fr"
                     target="_blank"
                     title="Click to see"
                   >
                     <article className="p-4 md:p-8">
                       <div className="flex justify-between gap-2 items-center">
                         <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                          #threejs
+                          #wordpress
                         </span>
                         <span className="text-zinc-500 text-xs  flex items-center gap-1">
                           <svg
@@ -415,11 +412,11 @@ export default function Home() {
                         </span>
                       </div>
                       <h4 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
-                        Custom Shirt
+                        Origin Web
                       </h4>
                       <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                        Create your own custom shirt with our 3D tool. Add your
-                        logo and cool textures. Made with React & Threejs.
+                        Creation and design of a digital agency's website and
+                        development of its brand identity.
                       </p>
                     </article>
                   </Link>
