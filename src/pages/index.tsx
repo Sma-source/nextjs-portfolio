@@ -102,7 +102,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative h-[18rem] md:h-[26rem] rounded-xl hover:bg-zinc-800/10 order-first lg:order-last  duration-700 border border-zinc-600 hover:border-zinc-400/50 bg-[url('/sma42.png')]  bg-cover bg-center sepia hover:sepia-0">
+              <div className="relative h-[18rem] md:h-[26rem] rounded-xl hover:bg-zinc-800/10 order-first lg:order-last  duration-700 border border-zinc-600 hover:border-zinc-400/50 bg-[url('/tof.png')]  bg-cover bg-center sepia hover:sepia-0">
                 <div className="pointer-events-none">
                   <div className="absolute inset-0 z-0  transition duration-1000 [mask-image:linear-gradient(black,transparent)]"></div>
                   <div
@@ -323,7 +323,7 @@ export default function Home() {
                     ></div>
                   </div>
                   <Link
-                    href="https://github.com/Sma-source/hallofprompt"
+                    href="https://technisourcing.com/"
                     target="_blank"
                     title="Click to see"
                   >
@@ -352,11 +352,14 @@ export default function Home() {
                       </div>
 
                       <h4 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
-                        Prompt Sharing
+                        Technisourcing
                       </h4>
                       <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                        An open source ai prompting tool to discover, create and
-                        share creative prompts. Made with Nextjs, TailwindCSS
+                        Une refonte complète du site web de Technisourcing.
+                        TechniSourcing assure à ses clients une sous-traitance
+                        Europe de l'Est de très haut niveau technologique en
+                        chaudronnerie, équipements inox, mécano-soudure lourde
+                        de précision.
                       </p>
                     </article>
                   </Link>
