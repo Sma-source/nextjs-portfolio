@@ -416,7 +416,8 @@ export default function Home() {
                       </h4>
                       <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                         Creation and design of a digital agency's website and
-                        development of its brand identity.
+                        development of its brand identity. Developed with
+                        wordpress
                       </p>
                     </article>
                   </Link>
