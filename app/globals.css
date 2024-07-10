@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-background {
+  background: linear-gradient(
+    18deg,
+    #dd8e77,
+    #9e6677,
+    #112bdc,
+    #46a4ce,
+    #94b739
+  );
+  background-size: 300% 300%;
+  animation: gradient-animation 45s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -68,7 +93,10 @@
 
 @layer base {
   * {
-    @apply border-border !scroll-smooth;
+    @apply border-border;
+  }
+  html {
+    @apply !scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;
@@ -81,5 +109,14 @@
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
