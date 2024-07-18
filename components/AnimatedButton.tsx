@@ -10,7 +10,7 @@ const AnimatedButton = () => {
     <Link
       href={"/#projects"}
       className={cn(
-        "group rounded-lg border text-base text-white transition-all ease-in hover:cursor-pointer border-white bg-black-100 hover:bg-black-200"
+        "group rounded-lg border text-base text-white transition-all ease-in hover:cursor-pointer border-purple bg-black-100 hover:bg-black-200 hover:border-white hover:ring-1 hover:ring-white"
       )}
     >
       <AnimatedShinyText className="inline-flex items-center justify-center py-3 px-9 transition ease-out  hover:duration-300 hover:text-neutral-300">
