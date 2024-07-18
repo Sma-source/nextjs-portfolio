@@ -94,7 +94,7 @@ export const projects = [
       "/supabase.svg",
       "/fm.svg",
     ],
-    link: "https://ui.yoom.com",
+    link: "Prochainement...",
   },
   {
     id: 3,
@@ -123,6 +123,19 @@ export const projects = [
       "/figma.svg",
     ],
     link: "https://www.nepsod.com",
+  },
+  {
+    id: 5,
+    title: "ACJ - Apprendre Chaque Jour",
+    des: "ACJ est une plateforme qui permet d'apprendre et de partager chaque jour des informations captivantes avec une communauté passionnée.",
+    img: "/acj.png",
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/supabase.svg",
+      "/fm.svg",
+    ],
   },
 ];
 
