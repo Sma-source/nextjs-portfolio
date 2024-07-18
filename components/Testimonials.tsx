@@ -57,11 +57,9 @@ const CARDS = [
     designation: "Développeur, Agence KN",
     content: (
       <p>
-        The first rule of
-        <Highlight>Fight Club</Highlight> is that you do not talk about fight
-        club. The second rule of
-        <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-        club.
+        Travailler avec <Highlight>Smaïn</Highlight> a été super, Il est
+        toujours partant pour de nouvelles idées. Toujours là pour aider et
+        partager ses connaissances.
       </p>
     ),
   },
