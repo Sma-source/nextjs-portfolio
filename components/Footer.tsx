@@ -4,6 +4,7 @@ import { socialMedia } from "@/data";
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -45,7 +46,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm text-neutral-200 md:font-normal font-light">
-          Copyright © 2024
+          Copyright © {currentYear}
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
