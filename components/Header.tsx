@@ -3,6 +3,26 @@ import { Spotlight } from "./ui/Spotlight";
 import BlurFade from "./ui/blur-fade";
 import AnimatedButton from "./AnimatedButton";
 import Link from "next/link";
+import { cn } from "@/utils/cn";
+
+export const Highlight = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <span
+      className={cn(
+        "font-bold  bg-purple/[0.1] text-purple px-1 py-0.5",
+        className
+      )}
+    >
+      {children}
+    </span>
+  );
+};
 
 const Header = () => {
   return (
@@ -12,13 +32,13 @@ const Header = () => {
         fill="white"
       /> */}
       <div
-        className="h-screen w-full bg-black-100  bg-grid-white/[0.04]
+        className="h-screen w-full bg-black-100  bg-grid-purple/[0.02]
        absolute top-0 left-0 flex items-center justify-center"
       >
         {/* Radial gradient for the container to give a faded look */}
         <div
           // chnage the bg to bg-black-100, so it matches the bg color and will blend in
-          className="pointer-events-none absolute inset-0 h-screen bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(180,128,217,0.4),rgba(255,255,255,0))]"
+          className="spotlight-header"
         />
       </div>
       {/* <Spotlight
@@ -30,20 +50,43 @@ const Header = () => {
         <BlurFade delay={0.25} inView>
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[80vw] flex flex-col items-center justify-center">
             <img
-              className="w-24 h-24 p-0.5 rounded-full ring-2 ring-purple dark:ring-gray-500 mb-11 -mt-16"
+              className="w-20 h-20 p-0.5 rounded-full ring-2 ring-purple dark:ring-gray-500 mb-8 -mt-20"
               src="/profile-pic 3.png"
             />
-            <h1 className="text-3xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-l from-neutral-50 to-neutral-400 bg-opacity-50">
-              Transformez vos idées <br /> en expériences captivantes.
-            </h1>
 
-            <p className="mt-6 font-normal text-2xl md:text-3xl text-neutral-300 max-w-3xl text-center mx-auto">
-              Je suis Smaïn, développeur full-stack basé à Lyon.
+            <h1 className="mt-4 text-6xl max-w-xl font-bold leading-[6.5rem]  text-center bg-clip-text text-transparent bg-gradient-to-l from-neutral-50 to-neutral-300 bg-opacity-50">
+              <div className="inline-block">Smaïn</div>
+              <span className="mot-design bg-clip-text text-transparent bg-gradient-to-l from-neutral-50 to-neutral-300 bg-opacity-50">
+                <div
+                  className="mot-selection"
+                  style={{ top: "-3px", left: "-3px" }}
+                ></div>
+                <div
+                  className="mot-selection"
+                  style={{ right: "-3px", top: "-3px" }}
+                ></div>
+                <div
+                  className="mot-selection"
+                  style={{ bottom: "-3px", left: "-3px" }}
+                ></div>
+                <div
+                  className="mot-selection"
+                  style={{ bottom: "-3px", right: "-3px" }}
+                ></div>
+                <div className="mot-taille text-white">
+                  Développeur Full Stack
+                </div>
+                Rabhi
+              </span>
+            </h1>
+            <p className="mt-3 font-normal text-xl leading-8 text-balance max-w-sm sm:max-w-screen-lg text-neutral-300  text-center mx-auto">
+              Passionné par l'innovation et le{" "}
+              <Highlight>développement</Highlight>, engagé dans l'excellence
+              technique et la résolution créative de défis complexes.
             </p>
-            <div className="flex mt-9 items-center justify-center ">
+            <div className="flex mt-9 items-center justify-center relative ">
               <AnimatedButton />
             </div>
-
             {/* <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-lg p-px text-md font-semibold leading-6  text-white inline-block mt-12">
               <span className="absolute inset-0 overflow-hidden rounded-lg">
                 <span className="absolute inset-0 rounded-lg bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
