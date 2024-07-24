@@ -119,4 +119,64 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .mot-design {
+    --accent-color: hsl(0 0% 40%);
+    box-shadow: 0 0 0 2px hsl(0 0% 40%);
+    padding: 0 0.25rem;
+    position: relative;
+    display: inline-flex;
+    margin-left: 0.5rem;
+    line-height: 4.5rem;
+  }
+
+  .mot-selection {
+    background: #fff;
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0 0 1px hsl(0 0% 40%);
+    position: absolute;
+  }
+
+  .mot-taille {
+    display: inline-block;
+    width: -moz-fit-content;
+    width: fit-content;
+    letter-spacing: -1px;
+    line-height: 16px;
+    border-radius: 3px;
+    padding: 1px 4px;
+    background: hsl(0 0% 40%);
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-wrap: nowrap;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+  }
+
+  .tracking-screen-tighter {
+    letter-spacing: -0.058125rem;
+  }
+
+  .spotlight-header {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #fff 0,
+      hsla(0, 0%, 100%, 0) 100%
+    );
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -12rem;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 1 / 1;
+    max-height: 770px;
+    width: 100vw;
+    max-width: 1280px;
+    opacity: 0.06;
+  }
 }
