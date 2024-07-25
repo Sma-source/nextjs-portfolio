@@ -1,4 +1,5 @@
 import { workExperience } from "@/data";
+import Image from "next/image";
 import React from "react";
 
 const Experience = () => {
@@ -25,9 +26,11 @@ const Experience = () => {
             className="bg-transparent shadow-xl border border-white/[0.1]  shadow-white/[0.05] relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1 flex-1 text-white border-slate-800"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-              <img
+              <Image
                 src={card.thumbnail}
-                alt={card.thumbnail}
+                alt={card.title}
+                width={80}
+                height={80}
                 className="lg:w-32 md:w-20 w-16"
               />
               <div className="lg:ms-5">
