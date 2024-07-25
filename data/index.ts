@@ -140,6 +140,7 @@ export const projects = [
       "/supabase.svg",
       "/fm.svg",
     ],
+    link: "",
     linkTitle: "Prochainement...",
   },
 ];
