@@ -81,6 +81,7 @@ export const projects = [
       "/figma.svg",
     ],
     link: "https://kawamel-cafe.fr",
+    linkTitle: "KawamelCafé",
   },
   {
     id: 2,
@@ -94,7 +95,8 @@ export const projects = [
       "/supabase.svg",
       "/fm.svg",
     ],
-    link: "Prochainement...",
+    link: "",
+    linkTitle: "Prochainement...",
   },
   {
     id: 3,
@@ -109,6 +111,7 @@ export const projects = [
       "/figma.svg",
     ],
     link: "https://technisourcing.com",
+    linkTitle: "Technisourcing",
   },
   {
     id: 4,
@@ -123,6 +126,7 @@ export const projects = [
       "/figma.svg",
     ],
     link: "https://www.nepsod.com",
+    linkTitle: "Nepsod",
   },
   {
     id: 5,
@@ -136,6 +140,7 @@ export const projects = [
       "/supabase.svg",
       "/fm.svg",
     ],
+    linkTitle: "Prochainement...",
   },
 ];
 
