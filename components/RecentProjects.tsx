@@ -18,7 +18,7 @@ const RecentProjects = () => {
             className="sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={item.id}
           >
-            <PinContainer title={item.link} href={item.link}>
+            <PinContainer title={item.linkTitle} href={item.link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden rounded-3xl"
@@ -63,9 +63,15 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Voir le projet
-                  </p>
+                  <Link
+                    aria-disabled={item.link === "" && "true"}
+                    href={item.link || ""}
+                    className={`${item.link === "" && "pointer-events-none"}
+                        flex lg:text-xl md:text-xs text-sm text-purple
+                    `}
+                  >
+                    {item.link === "" ? "En cours" : "Voir le projet"}
+                  </Link>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
