@@ -4,6 +4,7 @@ import BlurFade from "./ui/blur-fade";
 import AnimatedButton from "./AnimatedButton";
 import Link from "next/link";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 
 export const Highlight = ({
   children,
@@ -49,9 +50,12 @@ const Header = () => {
       <div className="flex justify-center relative my-20 z-10">
         <BlurFade delay={0.25} inView>
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[80vw] flex flex-col items-center justify-center">
-            <img
+            <Image
+              height={80}
+              width={80}
               className="w-20 h-20 p-0.5 rounded-full ring-2 ring-purple dark:ring-gray-500 mb-8 -mt-20"
               src="/profile-pic 3.png"
+              alt="Smain Rabhi"
             />
 
             <h1 className="mt-4 text-6xl max-w-xl font-bold leading-[6.5rem]  text-center bg-clip-text text-transparent bg-gradient-to-l from-neutral-50 to-neutral-300 bg-opacity-50">
@@ -80,7 +84,7 @@ const Header = () => {
               </span>
             </h1>
             <p className="mt-3 font-normal text-xl leading-8 text-balance max-w-sm sm:max-w-screen-lg text-neutral-300  text-center mx-auto">
-              Passionné par l'innovation et le{" "}
+              Passionné par l&apos;innovation et le{" "}
               <Highlight>développement</Highlight>, engagé dans l'excellence
               technique et la résolution créative de défis complexes.
             </p>
