@@ -28,11 +28,12 @@ const RecentProjects = () => {
                   <Image width="0" height="0" src="/bg.png" alt="bgimg" />
                 </div>
                 <Image
-                  width="400"
+                  width="300"
                   height="0"
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 w-"
+                  className="z-10 absolute bottom-0"
+                  style={{ height: "auto", width: "21rem" }}
                 />
               </div>
 
