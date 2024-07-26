@@ -5,6 +5,7 @@ import { PinContainer } from "./ui/3d-pin";
 import { projects } from "@/data";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -24,12 +25,14 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image width="0" height="0" src="/bg.png" alt="bgimg" />
                 </div>
-                <img
+                <Image
+                  width="400"
+                  height="0"
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 w-"
                 />
               </div>
 
