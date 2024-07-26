@@ -85,8 +85,9 @@ const Header = () => {
             </h1>
             <p className="mt-3 font-normal text-xl leading-8 text-balance max-w-sm sm:max-w-screen-lg text-neutral-300  text-center mx-auto">
               Passionné par l&apos;innovation et le{" "}
-              <Highlight>développement</Highlight>, engagé dans l'excellence
-              technique et la résolution créative de défis complexes.
+              <Highlight>développement</Highlight>, engagé dans
+              l&apos;excellence technique et la résolution créative de défis
+              complexes.
             </p>
             <div className="flex mt-9 items-center justify-center relative ">
               <AnimatedButton />
