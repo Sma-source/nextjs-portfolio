@@ -43,10 +43,10 @@ const CARDS = [
     content: (
       <p>
         Collaborer avec Smaïn a été un réel plaisir. En tant que cheffe de
-        projet, j'ai particulièrement apprécié son
+        projet, j&apos;ai particulièrement apprécié son
         <Highlight> écoute attentive et sa réactivité.</Highlight> Le projet
-        s'est bien déroulé et le résultat final est remarquable. Je recommande
-        vivement Smaïn pour ses{" "}
+        s&apos;est bien déroulé et le résultat final est remarquable. Je
+        recommande vivement Smaïn pour ses{" "}
         <Highlight>compétences et son sérieux.</Highlight>
       </p>
     ),
