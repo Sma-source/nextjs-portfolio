@@ -15,10 +15,10 @@ const MyButton = ({
 }) => {
   return (
     <button
-      className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none"
+      className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[0px] focus:outline-none border border-purple"
       onClick={handleClick}
     >
-      <span className="absolute inset-[-1000%]  bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_50%,#393BB2_50%,#E2CBFF_50%)]" />
+      {/* <span className="absolute inset-0  bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_50%,#393BB2_50%,#E2CBFF_50%)]" /> */}
 
       {/* remove px-3 py-1, add px-5 gap-2 */}
       <span
