@@ -10,6 +10,7 @@ import {
 import { IoCopyOutline, IoLogoJavascript } from "react-icons/io5";
 import { SiPhp, SiNextdotjs, SiGatsby, SiTypescript } from "react-icons/si";
 import MyButton from "../MyButton";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -107,10 +108,11 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              width={220}
+              height={0}
               className={cn(
                 spareImgClassName,
                 "object-cover object-center w-full h-full "
