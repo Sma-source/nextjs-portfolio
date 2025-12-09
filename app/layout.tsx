@@ -6,12 +6,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Smain Rabhi Développeur à Lyon",
-  description: "Je suis Smaïn, développeur full-stack basé à Lyon.",
+  description: "Je suis Smaïn, développeur basé à Paris",
   keywords: [
     "Développeur",
     "Création de site",
     "Full-Stack",
-    "Développeur à Lyon",
+    "Développeur à Paris",
   ],
 };
 
