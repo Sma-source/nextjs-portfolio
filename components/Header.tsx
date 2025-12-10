@@ -53,8 +53,8 @@ const Header = () => {
             <Image
               height={80}
               width={80}
-              className="w-20 h-20 p-0.5 rounded-full ring-2 ring-purple dark:ring-gray-500 mb-8 -mt-20"
-              src="/profile-pic 3.png"
+              className="w-20 h-20 md:w-28 md:h-28 p-0.5 rounded-full ring-2 ring-purple dark:ring-gray-500 mb-8 -mt-20"
+              src="/sma_avatarmin.png"
               alt="Smain Rabhi"
             />
 
