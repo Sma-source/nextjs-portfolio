@@ -1,3 +1,6 @@
+import { link } from "fs";
+import { title } from "process";
+
 export const gridItems = [
   {
     id: 1,
@@ -69,6 +72,15 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 77,
+    title: "Kawamel Café",
+    des: "Une landing page pour un spécialiste du dépannage et réparation de machines à café professionnelles à Lyon",
+    img: "/kawamel.png",
+    iconLists: ["React", "Next.js", "Typescript", "TailwindCSS"],
+    link: "https://kawamel-cafe.fr",
+    linkTitle: "Kawamel Café",
+  },
+  {
     id: 1,
     title: "LevelFit - Studio de Fitness",
     des: "LevelFit est un studio de fitness qui propose des cours collectifs dynamiques comme le Pilates, le yoga et le renforcement musculaire, dans un environnement convivial et motivant.",
@@ -81,8 +93,8 @@ export const projects = [
       "Stripe",
       "Figma",
     ],
-    link: "https://levelfit.fr",
-    linkTitle: "Level Fit",
+    link: "",
+    linkTitle: "Prochainement...",
   },
   {
     id: 4,
